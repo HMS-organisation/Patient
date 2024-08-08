@@ -1,0 +1,477 @@
+.container{
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 0px;
+  }
+  @import '~bootstrap/scss/bootstrap';
+  header {
+    height: 10vh;
+    background-color: #030303;
+  }
+  
+   a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transform: translateX(-220px);
+    opacity: 0;
+  }
+  
+  nav {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .menu {
+    transform: translateX(700px);
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    letter-spacing: 4px;
+    margin-left: 4rem;
+    transition: 0.2s ease-in;
+  }
+  
+  .menu li:hover {
+    transform: translateY(-3px);
+  }
+  
+  .first-content {
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  #first-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 2rem;
+    margin: 10px;
+  }
+  
+  .for1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 20rem;
+    flex-wrap: wrap;
+  }
+  
+  .for2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-2rem);
+    margin: 0;
+    width: 30rem;
+    height: 30rem;
+  }
+  
+  .text1 {
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  
+  .text1 h2 {
+    font-family: cursive;
+  }
+  
+  .text1 p {
+    padding-top: 10px;
+  }
+  
+  
+  
+  .button-content {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 5rem;
+  }
+  
+  #button {
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    align-items: center;
+    width: 10rem;
+    min-height: 6vh;
+    border-radius: 5px;
+    border: none;
+    background-color: #0e0d0ddd;
+    color: #b0acac;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+  }
+  
+  .btn:hover {
+    color: #030303;
+    background-color: #b0acac;
+    transform: translateX(+5px);
+  }
+  
+  .btn2 {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    min-height: 6vh;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #030303;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+  }
+  
+  .btn2:hover {
+    color: #494949;
+    background-color: #b7adad;
+    transform: translateX(+5px);
+  }
+  
+  /* area primeiro relogio-capa inicial*/
+  .tl-init {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  
+  /*Area card */
+  #card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid gray;
+    border-radius: 4px;
+    transform: translateX(-500px);
+    opacity: 0;
+    margin: 0;
+  }
+  
+  .card-item {
+    width: 8rem;
+    height: 20vh;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .card-item h5{
+    font-weight: 400;
+    color: #353535;
+  }
+  
+  .card-item span {
+    font-size: 1.8rem;
+  }
+  
+  /*area 3 */
+  #area-3 {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ebebeb;  
+    margin-bottom: 16px;
+    
+  }
+  
+  #card2 {
+    width: 100%;
+    display: flex;
+    margin: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4em;
+    flex-wrap: wrap;
+  }
+  
+  .card-item2{
+    margin: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    border-radius: 10px;
+    min-height: 40vh;
+    width: 20rem;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.25);
+    
+  }
+  
+  .card-item2 h2 {
+    padding-bottom: 1rem;
+    font-family: cursive;
+    font-size: 2em;
+    margin: 0 auto;
+  }
+  
+  .card-item p {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding-bottom: 1rem;
+  }
+  
+  .button-card2 {
+    margin-top: 1.2rem;
+    width: 10em;
+    min-height: 5vh;
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fef9f9;
+    border: 2px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #030303;
+    transition: 0.2s ease-in;
+  }
+  
+  .button-card2:hover {
+    background-color: #747272;
+    border: 2px solid #222222;
+    color: #fef9f9;
+    transform: translateX(+5px);
+  }
+  
+  .img-card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 46px 0px;
+    border-radius: 8px;
+    padding: 24px;
+  }
+  
+  .items-content2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .relogio2{
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  
+  /* Area Relogio */
+  .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 46px 0px;
+    background-color: #ebebeb;
+    border-radius: 8px;
+    padding: 24px;
+  }
+  
+  .items-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .relogio{
+    width: 100%;
+    max-width: 400px;
+    transform: translateX(-700px) rotate(180deg);
+    opacity: 0;
+  }
+  
+  
+  /* Area Modelos relogios */
+  .models-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 56px 16px;
+    padding: 24px;
+  }
+  
+  .models-content{
+    margin: 36px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .models-item {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .models-item img {
+    max-width: 300px;
+    margin-bottom: 16px;
+  }
+  
+  
+  .models-tag{
+    color: #DA5404;
+  }
+  
+  .models-title{
+    font-size: 24px;
+  }
+   /* RODAPE DA PAG*/
+  
+   footer {
+    display: flex;
+    min-height: 40vh;
+    color: #fff;
+    background-color: #030303;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .footer-item {
+    overflow: hidden;
+    width: 15rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-item h3 {
+    margin: 1rem 0 1rem 2rem;
+    font-size: 2em;
+  }
+  
+  .footer-item ul {
+    list-style: none;
+  }
+  
+  .footer-item ul li {
+    margin: 1rem 0;
+  }
+  
+  .footer-item ul li a {
+    font-size: 1.3em;
+    padding: 0.4rem 0 0 3rem;
+    color: #fff;
+    display: block;
+    transition: all 0.2s ease-in;
+  }
+  
+  .footer-item ul li a:hover {
+    transform: translateY(-5px);
+    color: #b0acac;
+  }
+  
+  // .input-area {
+  //   width: 20rem;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+  
+  // .input-area h3 {
+  //   padding: 2rem;
+  // }
+  
+  // .input-item {
+  //   position: relative;
+  //   margin: 1rem;
+  //   padding: 1rem;
+  //   display: flex;
+  //   width: 100%;
+  //   height: 10vh;
+  //   line-height: 9vh;
+  // }
+  
+  // input {
+  //   position: absolute;
+  //   width: 80%;
+  //   font-size: 1.8em;
+  //   padding: 0 30px;
+  //   line-height: 50px;
+  //   border-radius: 10px;
+  //   background: transparent;
+  //   transition: 0.2s ease;
+  //   z-index: 999;
+  // }
+  
+  // .input-hover {
+  //   position: absolute;
+  //   font-size: 1.3em;
+  //   color: #ebebeb;
+  //   padding: 0 1rem;
+  //   margin: 0 1rem;
+  //   background-color: #030303;
+  //   transition: 0.2s ease;
+  // }
+  
+  // input:focus,
+  // input:valid {
+  //   color: #66ff00;
+  //   border: 4px solid #66ff00;
+  // }
+  
+  // input:focus + .input-hover,
+  // input:valid + .input-hover{
+  //   color: #66ff00;
+  //   height: 30px;
+  //   line-height: 40px;
+  //   transform: translateY(-20px) scale(0.88);
+  //   z-index: 1111;
+  // }
+
+  /* The following line can be included in a src/App.scss */
+@import '~bootstrap/scss/bootstrap';
+
