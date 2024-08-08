@@ -1,15 +1,13 @@
-FROM node:alpine:3.14  as build
+# Stage 1: Build
+FROM node:14-alpine as build
 WORKDIR /patient
 COPY package.json .
 RUN npm install
 COPY . .
 RUN npm run build
 
-
+# Stage 2: Serve
 FROM nginx:1.20.0-alpine
-WORKDIR /usr/share/nginx/html
-RUN rm -rf *
-COPY --from=dist /patient/dist .
+COPY --from=build /patient/build /usr/share/nginx/html
 EXPOSE 80
-ENTRYPOINT [ "nginx" ,"-g","daemon off;"]
-
+CMD ["nginx", "-g", "daemon off;"]
