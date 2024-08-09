@@ -17,7 +17,7 @@ import Swal from "sweetalert2";
 import Anime from "./Anime";
 import { useNavigate } from "react-router-dom";
 
-
+const url = import.meta.env.VITE_API_URL;
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Dashboard() {
@@ -106,7 +106,7 @@ export default function Dashboard() {
     event.preventDefault();
     try {
       Swal.fire('Called')
-      const res = await axios.post('http://localhost:7000/api/Appointmentpost', values);
+      const res = await axios.post(`${url}/api/Appointmentpost`, values);
       console.log(res)
     } catch (error) {
       console.error(error);
